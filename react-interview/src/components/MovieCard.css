@@ -1,0 +1,33 @@
+.movie-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 20px); /* 3 cards per row */
+    box-sizing: border-box;
+  }
+  
+  .gauge {
+    height: 10px;
+    background: #ccc;
+    width: 100%;
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  .likes {
+    height: 100%;
+    background: #4caf50;
+  }
+  
+  @media (max-width: 768px) {
+    .movie-card {
+      flex: 1 1 calc(50% - 20px); /* 2 cards per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie-card {
+      flex: 1 1 100%; /* 1 card per row on very small screens */
+    }
+  }
+  
